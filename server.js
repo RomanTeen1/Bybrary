@@ -27,4 +27,4 @@ db.once('open',() =>{console.log('Connected to mongoose')});
 // Router use from routes folder
 app.use('/', indexRouter);
 
-app.listen( 3000);
+app.listen(process.env.PORT || 3000);
